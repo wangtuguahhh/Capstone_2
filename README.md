@@ -23,7 +23,7 @@ The problem at hand is to build a supervised classification model. This is a fun
 
 3. **Transformer-based Models for Vision:** Originally designed for natural language processing, transformers have been adapted to vision tasks with promising results.
 
-In this work, a **9-layer CNN model** was selected for the plant leave disease diagnosis task. CNN models are the fundation of more advanced models and they are well developed and widely used in the deep learning community. 
+In this work, a **9-layer CNN model** was selected for the plant leaf disease diagnosis task. CNN models are the foundation of more advanced models and they are well developed and widely used in the deep learning community. 
 
 ## 3. Data Challenges
 
