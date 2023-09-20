@@ -1,5 +1,5 @@
 ![cover_photo](https://hips.hearstapps.com/hmg-prod/images/indoor-plants-1-64f051a37d451.jpg?crop=1xw:0.9xh;center,top&resize=1200:*)
-# Plant Leaf Diseases Diagnosis
+# Plant Leaf Diseases Diagnosis with Deep Learning
 
 *Plant disease identification relies on the experience and expertise of farmers or gardeners. As a home gardener or houseplant hobbyist, most of the time the required experience and expertise is missing. A machine learning based plant leaf diseases identification tool becomes very helpful.*
 
