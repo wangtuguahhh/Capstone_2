@@ -88,7 +88,7 @@ model_1 had the best image quality since there was no data augmentation. model_4
 
 ## 8. Future Improvements
 
-There are so much more to improve for this task. 
+There is so much more to improve for this task. 
 
 **Modeling:**
 
@@ -96,9 +96,9 @@ Model hyper parameter tuning, such as the optimization method, metric, epoch num
 
 **Feature Engineering:**
 
-* Boostrapping to draw more images from data without augmentation, such as to draw 500 images for each class.
+* Bootstrapping to draw more images from data without augmentation, such as to draw 500 images for each class.
 * If improvement is observed for the step above, try drawing more images for each class to find the sweet spot.
-* Boostrapping to draw more images from data with augmentation, say 1500 for each class to see if there is any benefits.
+* Bootstrapping to draw more images from data with augmentation, say 1500 for each class to see if there are any benefits.
 
 **Pre-processing:**
 
@@ -106,12 +106,12 @@ After settling down on the model and feature engineering part, try using gray sc
 
 **Data Augmentation:**
 
-* Currently, multiple data augmentation methods were used such as rotation, flip, scaling, adding noises and etc. Try to limit to one augmentation method to see if certain augmentation improves model performance.
-* Expore other augmentation technique.
+* Multiple data augmentation methods were used in this work, such as rotation, flip, scaling, adding noises, etc. Try to limit to one augmentation method to see if certain augmentation improves model performance.
+* Explore other augmentation techniques.
 
 **Input Data:**
 
-Search online to collect more images for the classes with limited number of samples.
+Search online to collect more images for the classes with a limited number of samples.
 
 ## 9. Acknowledgement
 
