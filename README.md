@@ -65,6 +65,7 @@ Here is the step-by-step pre-processing on the input data:
 The CNN model was built using [TensorFlow.Keras.Models](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential). Model structure and parameters were kept simple and some from the journal paper. 
 
 The focus was to test performance of models built from the following approaches:
+
 ![image](https://github.com/wangtuguahhh/Capstone_2/assets/130683390/74ed6db0-1f62-42d2-9029-6460cef81862)
 
 
