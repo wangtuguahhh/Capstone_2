@@ -73,7 +73,7 @@ Accuracy, cross_entropy, classification report and confusion matrix were selecte
 
 ![image](https://github.com/wangtuguahhh/Capstone_2/assets/130683390/04ceb56b-48cf-4c4f-9b41-a74ab6fb091d)
 
-*Note that for model_3 and model_4, a majority vote was used to generate the final output from the 5 different Boostrapping models.*
+*Note that for model_3 and model_4, a majority vote was used to generate the final output from the 5 different Bootstrapping models.*
 
 ![image](https://github.com/wangtuguahhh/Capstone_2/assets/130683390/836ffe05-2be7-4395-b107-d4bb01fa63d3)
 
