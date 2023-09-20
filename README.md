@@ -37,10 +37,10 @@ Here are the numbers of images in each class for the training data and testing d
 
 By carefully selecting model metrics, the imbalanced testing data may not be a big issue. However, the imbalanced training data centainly will have negative impacts on model building.
 
-Besides the imbalanced class issue, there are several classes with very **limited number of images**, the smallest number only 122. With such limited data, it is hard for any model to give accurate predictions.
+Besides the imbalanced class issue, there are several classes with a very **limited number of images**, the smallest number only 122. With such limited data, it is hard for any model to give accurate predictions.
 
 To address the limiting sample issue and imbalanced class issue in the training data:
-* **Solution 1:** Ideally appraoch will be collecting more data for the classes with limited amount of samples. In this work, inspired by the original journal paper, **data augmentation** using existing data was implemented to increase number of samples.
+* **Solution 1:** The ideal approach will be collecting more data for the classes with limited amounts of samples. In this work, inspired by the original journal paper, **data augmentation** using existing data was implemented to increase number of samples.
 
 * **Solution 2:** With unbalanced data, ituitively we can down-scale or up-scale the data. The widely used solution in practice is **Boostrapping**, which mitigates the data unbalance issue and improves model accuracy. Therefore, boostrapping was tried in this work. 
 
@@ -64,11 +64,9 @@ Here is the step-by-step pre-processing on the input data:
 
 The CNN model was built using [TensorFlow.Keras.Models](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential). Model structure and parameters were kept simple and some from the journal paper. 
 
-The focus was to test performance of models built from the following different training data:
-* using training data without augmentation (classes are imbalanced; varying from 122 to 4406)
-* using augementated training data (classes are imbalanced; varying from 915 to 4406)
-* using Bootstrapping to draw 200 images from each class in the training data without augmentation for 5 times (classes are balanced)
-* using Bootstrapping to draw 900 images from each class in the augmented training data for 5 times (classes are balanced)
+The focus was to test performance of models built from the following approaches:
+![image](https://github.com/wangtuguahhh/Capstone_2/assets/130683390/74ed6db0-1f62-42d2-9029-6460cef81862)
+
 
 Accuracy, cross_entropy, classification report and confusion matrix were selected as the metrics for model evaluation.
 
