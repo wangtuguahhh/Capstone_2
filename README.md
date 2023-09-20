@@ -65,7 +65,7 @@ Here is the step-by-step pre-processing on the input data:
 The CNN model was built using [TensorFlow.Keras.Models](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential). Model structure and parameters were kept simple and some from the journal paper. 
 
 The focus was to test performance of models built from the following different training data:
-* using training data without augmentation (classes are imbalanced; varying from varying from 122 to 4406)
+* using training data without augmentation (classes are imbalanced; varying from 122 to 4406)
 * using augementated training data (classes are imbalanced; varying from 915 to 4406)
 * using Bootstrapping to draw 200 images from each class in the training data without augmentation for 5 times (classes are balanced)
 * using Bootstrapping to draw 900 images from each class in the augmented training data for 5 times (classes are balanced)
