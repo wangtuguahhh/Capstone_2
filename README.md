@@ -115,7 +115,7 @@ Search online to collect more images for the classes with a limited number of sa
 
 ## 9. Acknowledgement
 
-Thanks to Nicolas Renotte for his fun and engaging YouTube Video on [Buiding a Deep CNN Image Classifier](https://youtu.be/jztwpsIzEGc?si=jloqKAHLX2557qRR) and Raghunandan Patthar for being a super supporting Springboard mentor.
+Thanks to Nicolas Renotte for his fun and engaging YouTube Video on [Build a Deep CNN Image Classifier](https://youtu.be/jztwpsIzEGc?si=jloqKAHLX2557qRR) and Raghunandan Patthar for being a super supporting Springboard mentor.
 
 
 
