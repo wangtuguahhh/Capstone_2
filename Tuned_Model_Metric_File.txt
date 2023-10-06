@@ -1,0 +1,17 @@
+# create a model
+model = Sequential()
+# Add layers to the model
+model.add(Conv2D(32, (3,3), 1, activation = 'relu', input_shape = (128,128,3)))
+model.add(MaxPooling2D())
+model.add(Conv2D(16, (3,3), 1, activation = 'relu'))
+model.add(MaxPooling2D())
+model.add(Conv2D(32, (3,3), 1, activation = 'relu'))
+model.add(MaxPooling2D())
+model.add(Flatten())
+model.add(Dense(128, activation = 'relu'))
+model.add(Dropout(0.1))
+model.add(Dense(39, activation = 'softmax'))
+# compile the model
+model.compile('adam', loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'])
+# train the model
+model.fit(train, epochs = 15, validation_data = val)
