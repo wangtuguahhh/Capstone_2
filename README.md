@@ -88,20 +88,37 @@ model_1 had the best image quality since there was no data augmentation. model_4
 
 [Modeling Notebook](https://github.com/wangtuguahhh/Capstone_2/blob/c367d1c0ef0730e7326bac6507f3ec7a4319484d/notebook/Capstone2_04_Modeling.ipynb)
 
+## 6. Hyper-parameter Tuning
 
-## 8. Future Improvements
+The original CNN model was tuned using the hyperband optimization algorithm to improve model performance with approach 4. The hyperband optimization better utilized the resources in a more efficient way compared to grid search or random search. `kears_tuner.Hyperband` packadge was used to implement the hyperband optimization. The following parameters were tested:
+* filter numbers in the 2nd Conv2d
+* filter numbers in the 3rd Conv2d
+* rate in Dropout layer
+* optimizer method in model.compile
+
+Here is the optimized CNN structure.
+![image](https://github.com/wangtuguahhh/Capstone_2/assets/130683390/49805804-9626-4e07-be1c-f73e10b5c85a)
+
+The tuned model provided better predictions on test data. Compared to the original setup, more filter numbers in the last convolution layer and less dropout were prefered by the hyperband optimization algorithm.
+
+![image](https://github.com/wangtuguahhh/Capstone_2/assets/130683390/87a75099-ae06-46a5-9e9a-5bdc586a8576)
+
+[Hyper-parameter tuning notebook](https://github.com/wangtuguahhh/Capstone_2/blob/77615176f66456ff387273edaffc2fa00dc480b3/notebook/Capstone2_05_Modeling_Hyperparameter_Tuning.ipynb)
+
+## 7. Future Improvements
 
 There is so much more to improve for this task. 
 
 **Modeling:**
 
-Model hyper parameter tuning, such as the optimization method, metric, epoch numbers, dropout percentage and etc.
+Model hyper parameter tuning, such as more filters in convolution layers, more units in the fully connected layer, learning rate in optimizer, epoch numbers and etc.
 
 **Feature Engineering:**
 
 * Bootstrapping to draw more images from data without augmentation, such as to draw 500 images for each class.
 * If improvement is observed for the step above, try drawing more images for each class to find the sweet spot.
 * Bootstrapping to draw more images from data with augmentation, say 1500 for each class to see if there are any benefits.
+* Find a balance between bootstrapping sample size the ensembling times, small sample size requiring more ensembling times.
 
 **Pre-processing:**
 
@@ -116,7 +133,7 @@ After settling down on the model and feature engineering part, try using gray sc
 
 Search online to collect more images for the classes with a limited number of samples.
 
-## 9. Acknowledgement
+## 8. Acknowledgement
 
 Thanks to Nicolas Renotte for his fun and engaging YouTube Video on [Build a Deep CNN Image Classifier](https://youtu.be/jztwpsIzEGc?si=jloqKAHLX2557qRR) and Raghunandan Patthar for being a super supporting Springboard mentor.
 
